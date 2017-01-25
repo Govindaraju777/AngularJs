@@ -1,0 +1,12 @@
+#system files
+.DS_Store
+
+# Eclipse artifacts, including WTP generated manifests
+.classpath
+.project
+spring-*/src/main/java/META-INF/MANIFEST.MF
+.settings/
+.externalToolBuilders/
+.tern-project
+.metadata/*
+bin/
