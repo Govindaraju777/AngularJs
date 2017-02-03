@@ -1,0 +1,47 @@
+<!doctype html>
+<html ng-app="customvalidationapp" ng-cloak>
+<head>
+<title>AngularJS Tutorial 5</title>
+<style>
+[ng\:cloak], [ng-cloak], .ng-cloak {
+	display: none;
+}
+
+table {
+	width: 400px;
+	text-align: left;
+	border: 2px solid black;
+	padding: 10px;
+}
+
+input.ng-dirty.ng-invalid {
+	border-color: red;
+}
+
+.invalidInputFormat{
+	border: 1px solid red;
+}
+</style>
+</head>
+<body>
+
+
+
+	<div ng-controller="mainCtrl"  ng-init="userName=none">
+	Date : 
+		<input id="datetest" type="text" ng-model="userName"/> <p>{{userName}}</p>
+		<input id="datetest2" type="text" ng-model="userName1"/> 
+		<button ng-click="resetFunciton();">Reset</button>
+	</div>
+	
+ 
+
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+	<script	src="http://momentjs.com/downloads/moment.min.js"></script>
+		
+	<script src="js/resetFields.js"></script>
+
+
+</body>
+</html>

@@ -45,6 +45,32 @@ input.ng-dirty.ng-invalid {
 		
 	<script src="js/customValidation.js"></script>
 
-
+ 	
+		<div ng-controller="mainCtrl">
+					 
+		 <hr>
+		 Create Str to Date :<br>
+		
+		INPUT DATE STR (YYYY-MM-DD) :
+		<input type="text" ng-model="testDateStr" />
+		<button ng-click="convertToDateFromStr();">convertToDateFromStr</button>
+		
+		converted Date obj = {{testDateObj}}
+			
+	  
+		
+		<hr>
+		str to moment date converted : 
+		
+		 <div><p>{{strdate1}} = {{date1}}</p><br>
+		 <p>{{strdate2}}={{date2}}</p><br>
+		 <p>{{strdate3}}={{date3}}</p><br>
+		 <p>{{strdate4}}={{date4}}</p><br></div>
+		 <hr>
+		 
+			
+		</div>
+	
+	
 </body>
 </html>
